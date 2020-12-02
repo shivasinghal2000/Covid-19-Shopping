@@ -1,0 +1,23 @@
+1. using react-currency format for expressing money
+2. <div className='subtotal'>
+      <CurrencyFormat
+        renderText={(value) => (
+          <>
+            <p>
+          Subtotal({basket.length} items):
+              <strong>{`${value}`}</strong>
+            </p>
+            <small className='subtotal_gift'>
+              <input type='checkbox' />This order contains a gift
+            </small>
+          </>
+        )}
+        decimalScale={2}
+        value={getBasketTotal(basket)}
+        displayType={'text'}
+        thousandSeparator={true}
+        prefix='€'
+      />
+    </div>
+3. react context api/redux for adding items to basket
+4. 
