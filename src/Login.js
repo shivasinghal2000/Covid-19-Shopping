@@ -1,19 +1,27 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
+import { auth } from './firebase'
 import './Login.css'
 
 function Login () {
+  const history = useHistory()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const signIn = e => {
     e.preventDefault() // prevents page from being refresh
-    
-    // some firebase login code will come here
+    auth.signInWithEmailAndPassword(email, password).then(auth => {
+      history.push('/')
+    }).catch(error => alert(error.message))
   }
   const register = e => {
     e.preventDefault()
-    
-    // some firebase register code will come here
+    auth.createUserWithEmailAndPassword(email, password).then((auth) => {
+      // it means it has successfully created a new user with email and password
+      console.log(auth)
+      if(auth) {
+        history.push('/')
+      }
+    }).catch(error => alert(error.message))
   }
   return (
     <div className='login'>
