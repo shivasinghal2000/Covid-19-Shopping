@@ -20,4 +20,16 @@
       />
     </div>
 3. react context api/redux for adding items to basket
-4. 
+4. Now we will add stripe functionality
+5. it will create checkout page/payment page using stripe frontend
+6. We will use cloud function to process stripe payment(serverless)
+7. Firebase for real-time database is used (Firestore)
+8. MERN Stack project
+9. Build the 'my orders' page
+10. Store orders for logged in user!
+11. things i have to modify
+    -> footer
+    -> hover effect
+    -> slide advertisements
+    
+    

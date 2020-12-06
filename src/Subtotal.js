@@ -4,6 +4,7 @@ import CurrencyFormat from 'react-currency-format'
 import { ShoppingBasket } from '@material-ui/icons'
 import { useStateValue } from './StateProvider'
 import { getBasketTotal } from './reducer'
+import { useHistory } from 'react-router-dom'
 
 function Subtotal () {
   const [{ basket }, dispatch] = useStateValue()
