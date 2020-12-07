@@ -1,0 +1,18 @@
+1. using react-currency format for expressing money
+2. We have used https://material-ui.com/components/material-icons/ for shopping basket icons and various icons
+3. react context api/redux for adding items to basket
+4. Now we will add stripe functionality
+5. it will create checkout page/payment page using stripe frontend
+6. We will use cloud function to process stripe payment(serverless)
+7. Firebase for real-time database is used (Firestore)
+8. MERN Stack project
+9. Build the 'my orders' page
+10. Store orders for logged in user!
+11. things i have to modify
+    -> footer
+    -> hover effect
+    -> slide advertisements
+12. src folder is my front end 
+13. functions folder is my full back-end(cloud functions)
+14. We are using express for backend
+15. 
