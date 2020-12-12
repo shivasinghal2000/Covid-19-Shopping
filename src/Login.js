@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Particles from 'react-particles-js'
 import { Link, useHistory } from 'react-router-dom'
 import { auth } from './firebase'
 import './Login.css'
@@ -18,7 +19,7 @@ function Login () {
     auth.createUserWithEmailAndPassword(email, password).then((auth) => {
       // it means it has successfully created a new user with email and password
       console.log(auth)
-      if(auth) {
+      if (auth) {
         history.push('/')
       }
     }).catch(error => alert(error.message))
@@ -26,19 +27,19 @@ function Login () {
   return (
     <div className='login'>
       <Link to='/'>
-        <img className='login_logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1280px-Amazon_logo.svg.png' />
+        <img className='login_logo' src='https://www.yorkgraphicdesigners.co.uk/wp-content/uploads/2020/04/coronavirus_logo-2-833x321.jpg' />
       </Link>
       <div className='login_container'>
         <h1>Sign-in</h1>
         <form>
           <h5>E-mail</h5>
-          <input type='text' vlaue={email} onChange={e => setEmail(e.target.value)} />
+          <input type='text' value={email} onChange={e => setEmail(e.target.value)} />
           <h5>Password</h5>
           <input type='password' value={password} onChange={e => setPassword(e.target.value)} />
           <button type='submit' onClick={signIn} className='login_signInButton'>Sign In</button>
         </form>
-        <p>By signing-in you agree to Amazon's FAKE CLONE Conditions of Use & Sale. Please see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.</p>
-        <button onClick={register} className='login_registerButton'>Create your Amazon Account</button>
+        <p>By signing-in you agree Covid-19's FAKE CLONE Conditions of Use & Sale. Please see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.</p>
+        <button onClick={register} className='login_registerButton'>Create your Account</button>
       </div>
     </div>
   )

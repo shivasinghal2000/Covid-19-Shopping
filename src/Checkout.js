@@ -9,7 +9,7 @@ function Checkout () {
   return (
     <div className='checkout'>
       <div className='checkout_left'>
-        <img className='checkout_ad' src='https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/PrimeRewards/LP_Revamp/PC_Header_Banner._CB468631809_.jpg' alt='' />
+        <img className='checkout_ad' src='https://tpc.googlesyndication.com/simgad/10846789476852082521?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qlKmu6hR2AtytVxaY_LuEU9XiUJdQ' alt='' />
         <div>
   <h3>Hello, {!user ? 'Guest' : user?.email }</h3>
           <h2 className='checkout_title'>Your Shopping Basket</h2>

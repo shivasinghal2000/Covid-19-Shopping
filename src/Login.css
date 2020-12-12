@@ -1,5 +1,5 @@
 .login {
-  background-color: white;
+  background-color:rgb(233, 74, 45);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,9 +9,10 @@
   margin-top: 20px;
   margin-bottom: 20px;
   object-fit: contain;
-  width: 100px;
+  width: 200px;
   margin-right: auto;
   margin-left: auto;
+  /* background-color: white; */
 }
 .login_container {
   width: 300px;
@@ -34,6 +35,10 @@
   margin-bottom: 10px;
   background-color: white;
   width: 98%;
+}
+.login_container > form > input:hover{
+  background-color: black;
+  color: white;
 }
 .login_container > p {
   margin-top: 15px;

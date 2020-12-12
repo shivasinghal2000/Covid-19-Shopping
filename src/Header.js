@@ -19,7 +19,7 @@ function Header () {
       <Link to='/'>
         <img
           className='header_logo'
-          src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'
+          src='https://www.yorkgraphicdesigners.co.uk/wp-content/uploads/2020/04/coronavirus_logo-2-833x321.jpg'
         />
       </Link>
       {/* for search box */}
@@ -44,10 +44,10 @@ function Header () {
             <span className='header_optionLineTwo'>& Orders</span>
         </div>
         </Link>
-        <div className='header_option'>
+        {/* <div className='header_option'>
           <span className='header_optionLineOne'>Your</span>
           <span className='header_optionLineTwo'>Prime</span>
-        </div>
+        </div> */}
         <Link to='/checkout'>
           <div className='header_optionBasket'>
             <ShoppingBasketIcon />
